@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="CardVV"
+run/main_scene="uid://cwj1s63hs5hhm"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
