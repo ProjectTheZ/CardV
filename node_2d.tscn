@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dnjw75v1wj502"]
+
+[node name="Main" type="Node2D"]
+
+[node name="CardBorder" type="Sprite2D" parent="."]
