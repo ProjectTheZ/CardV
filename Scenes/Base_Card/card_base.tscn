@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwj1s63hs5hhm"]
+
+[ext_resource type="Script" uid="uid://bs5wo8nehljgp" path="res://Scripts/Card.gd" id="1_wcpn4"]
+
+[sub_resource type="Skin" id="Skin_nmcrt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nmcrt"]
+size = Vector3(0.2, 3.4325, 2)
+
+[node name="Card_Base" type="Area3D"]
+script = ExtResource("1_wcpn4")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+skin = SubResource("Skin_nmcrt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.85024, 0)
+visibility_parent = NodePath("../MeshInstance3D")
+shape = SubResource("BoxShape3D_nmcrt")

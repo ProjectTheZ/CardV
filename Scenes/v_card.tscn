@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyw1np2gd6wr6"]
+
+[ext_resource type="Script" uid="uid://dga4nyny8gwt0" path="res://Scripts/v_card.gd" id="1_2fruv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_du2ai"]
+
+[node name="VCard" type="Area3D"]
+script = ExtResource("1_2fruv")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_du2ai")
